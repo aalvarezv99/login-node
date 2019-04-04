@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+    <% include includes/header %>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center">
+            <h1>Profile Page</h1>
+            <a href="/logout" class="btn btn-ligth btn-sm"> Logout</a>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-tittle"><span class="fa fa-user"></span> Local</h3>
+                    <p>
+                        <strong>Id</strong>:<%=user._id%> <br>
+                        <strong>Email</strong>:<%=user.local.email%> <br>
+                        <strong>Password</strong>:<%=user.local.password%>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
